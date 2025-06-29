@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bollos Deliciosos</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        section {
+            padding: 2rem;
+        }
+        .product-box, .review-box, .form-box {
+            background-color: #1565c0;
+            color: white;
+            padding: 1rem;
+            margin: 1rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .flex-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1rem;
+        }
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        .form-grid input, .form-grid textarea {
+            width: 100%;
+            padding: 1rem;
+            font-size: 1rem;
+            border: none;
+            border-radius: 8px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+        nav ul li a {
+            background-color: #1565c0;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="main-title">Nuestros deliciosos bollos</h1>
+        <nav class="centered-nav">
+            <ul>
+                <li><a href="#reseñas">Reseñas</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#pedidos">Pedidos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="productos">
+        <h2>Nuestros productos</h2>
+        <div class="flex-container">
+            <div class="product-box">
+                <p>Imagen de bollo 1</p>
+                <p>Descripción Bollo 1</p>
+            </div>
+            <div class="product-box">
+                <p>Imagen de bollo 2</p>
+                <p>Descripción Bollo 2</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="reseñas">
+        <h2>Lo que dicen nuestros clientes</h2>
+        <div class="flex-container">
+            <div class="review-box">
+                <p><strong>Nombre 1</strong></p>
+                <p>Reseña 1</p>
+            </div>
+            <div class="review-box">
+                <p><strong>Nombre 2</strong></p>
+                <p>Reseña 2</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pedidos">
+        <h2>Pedidos</h2>
+        <div class="form-grid">
+            <div>
+                <input type="text" placeholder="Nombre completo">
+                <input type="text" placeholder="Número de Whatsapp">
+                <input type="text" placeholder="Tipo de pedido">
+                <input type="submit" value="Productos">
+            </div>
+            <div>
+                <textarea rows="6" placeholder="Especificaciones (Opcional):"></textarea>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
